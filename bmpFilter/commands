@@ -1,0 +1,4 @@
+./a.out < ./images/orig-cheese.bmp > threshold-cheese.bmp
+./a.out -g < ./images/orig-cheese.bmp > grayscale-cheese.bmp
+./a.out -g < images/orig-horses.bmp | diff - images/grayscale-horses.bmp
+./a.out -g < images/orig-horses.bmp | xxd | diff - images/grayscale-horses.txt
